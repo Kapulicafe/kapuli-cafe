@@ -1,0 +1,677 @@
+/* Componentes de UI (Botones, Tarjetas, etc) */
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    border-radius: 0;
+    font-weight: 700;
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: var(--border-solid);
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--color-noche-andina); 
+    color: var(--color-papel-arroz); 
+}
+
+.btn-primary:hover {
+    background-color: var(--color-papel-arroz); 
+    color: var(--color-noche-andina);
+    transform: none;
+}
+
+.btn-secondary, .btn-strava {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: var(--color-text-main);
+    padding: 0;
+    padding-bottom: 4px;
+    border-radius: 0;
+    position: relative;
+    text-decoration: none;
+}
+
+.btn-secondary::after, .btn-strava::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-naranja-alpinista);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-secondary:hover, .btn-strava:hover {
+    background-color: transparent;
+    transform: none;
+    box-shadow: none;
+    color: var(--color-text-main);
+}
+
+.btn-secondary:hover::after, .btn-strava:hover::after,
+.btn-secondary:focus::after, .btn-strava:focus::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Tarjetas de Menú */
+.category-card {
+    background-color: var(--color-papel-arroz);
+    color: var(--color-noche-andina);
+    padding: var(--spacing-lg);
+    border-radius: 0;
+    border: var(--border-solid);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-card::before {
+    display: none;
+}
+
+.category-card:hover {
+    background-color: var(--color-noche-andina);
+    color: var(--color-secondary);
+    transform: none;
+}
+
+.category-card:hover .category-icon,
+.category-card:hover h3,
+.category-card:hover p,
+.category-card:hover h4 {
+    color: var(--color-secondary) !important;
+}
+
+.category-card h3 {
+    color: var(--color-text-main);
+    font-size: 2rem;
+    margin-bottom: var(--spacing-sm);
+    font-family: var(--font-serif);
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.category-card h4 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.product-list {
+    text-align: left;
+    margin-top: var(--spacing-md);
+}
+
+.product-list li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed var(--color-terracota-ceniza);
+    padding: 0.5rem 0;
+    color: var(--color-text-muted);
+}
+
+.product-list li:last-child {
+    border-bottom: none;
+}
+
+.product-list .price {
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+/* Asymmetric Grid for Market and Social */
+.market-gallery, .social-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 250px;
+    gap: var(--spacing-sm);
+}
+
+.market-item {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.market-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.market-item:hover img, .market-item:focus-within img {
+    transform: scale(1.08);
+}
+
+/* Asymmetric rules for items */
+.market-item:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.market-item:nth-child(2) {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.market-item:nth-child(3) {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+/* Responsive Asymmetric Grid */
+@media (max-width: 768px) {
+    .market-gallery, .social-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+    .market-item:first-child, .market-item:nth-child(2), .market-item:nth-child(3) {
+        grid-column: span 1;
+        grid-row: span 1;
+        aspect-ratio: 16/9;
+    }
+}
+
+/* Mountain Dashboard (Reemplaza el placeholder) */
+.mountain-dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1px;
+    background-color: rgba(0, 0, 0, 0.06);
+    margin-top: var(--spacing-md);
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.mountain-dashboard::before {
+    content: '';
+    position: absolute;
+    top: -5px; bottom: -5px;
+    left: -1px; right: -1px;
+    border-left: 1px solid rgba(0, 0, 0, 0.06);
+    border-right: 1px solid rgba(0, 0, 0, 0.06);
+    pointer-events: none;
+}
+
+.mountain-dashboard::after {
+    content: '';
+    position: absolute;
+    top: -1px; bottom: -1px;
+    left: -5px; right: -5px;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    pointer-events: none;
+}
+
+.weather-card {
+    background-color: var(--color-liquen-profundo);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: none;
+    border-radius: 0;
+    padding: var(--spacing-sm);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.weather-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.weather-location {
+    color: var(--color-terracota-ceniza); /* Terracota Ceniza */
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+}
+
+.weather-data {
+    color: var(--color-secondary); /* Verde Kapulí */
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.weather-data svg, .weather-data [id^="temp-"] {
+    color: var(--color-cereza-sangre);
+}
+
+/* Botón flotante Chatbot */
+.floating-chat {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: auto;
+    height: 56px;
+    background-color: #EAEAEA; /* Gris claro tipo píldora */
+    color: #1A1A1A; /* Negro sólido */
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px 0 16px;
+    gap: 12px;
+    font-size: 1.1rem;
+    font-family: var(--font-primary);
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+    border: none;
+}
+
+.floating-chat svg {
+    flex-shrink: 0;
+}
+
+.floating-chat:hover {
+    transform: translateY(-3px);
+    background-color: #DCDCDC; 
+}
+
+@media (max-width: 768px) {
+    .floating-chat {
+        height: 42px;
+        padding: 0 16px 0 12px;
+        gap: 8px;
+        font-size: 0.8rem;
+        border-radius: 21px;
+        bottom: 20px;
+        right: 16px;
+    }
+    .floating-chat svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Indicadores de Notas de Cata (Guía Sensorial) */
+.tasting-note-pill {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--color-terracota-ceniza);
+    border: 1px solid var(--color-terracota-ceniza);
+    margin: 0 8px 8px 0;
+    font-weight: 600;
+}
+
+.tasting-notes-container {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+/* Accesibilidad Selector Idioma */
+.lang-selector button.active {
+    border-bottom: 2px solid var(--color-secondary);
+    padding-bottom: 2px;
+}
+
+/* Coffee Wheel Component (Onyx Style) */
+.lab-section {
+    background-color: var(--color-background) !important;
+    padding: var(--spacing-xl) 0;
+    color: var(--color-text-main);
+    overflow: hidden;
+}
+
+.lab-section .section-title {
+    color: var(--color-text-main);
+}
+
+.lab-section .wheel-node {
+    color: var(--color-text-muted);
+}
+
+.lab-section .wheel-node:hover, .lab-section .wheel-node.active {
+    color: var(--color-naranja-alpinista);
+}
+
+.lab-section .center-content h3 {
+    color: var(--color-fondo-oscuro) !important;
+    text-shadow: none;
+}
+
+.lab-section .center-content p {
+    color: var(--color-fondo-oscuro) !important;
+    text-shadow: none;
+}
+
+.lab-section .wheel-svg-lines line {
+    stroke: rgba(0, 0, 0, 0.15) !important;
+}
+
+.coffee-wheel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 600px;
+}
+
+.wheel-svg-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.wheel-node {
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    font-family: var(--font-primary);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    z-index: 2;
+}
+
+.wheel-node:hover, .wheel-node.active {
+    color: var(--color-naranja-alpinista);
+    transform: scale(1.05);
+}
+
+/* Absolute Positioning for 1000x600 Container */
+.node-l1 { top: 130px; left: 0px; text-align: right; width: 200px; }
+.node-l2 { top: 280px; left: -50px; text-align: right; width: 200px; }
+.node-l3 { top: 430px; left: 0px; text-align: right; width: 200px; }
+
+.node-r1 { top: 130px; right: 0px; text-align: left; width: 200px; }
+.node-r2 { top: 280px; right: -50px; text-align: left; width: 200px; }
+.node-r3 { top: 430px; right: 0px; text-align: left; width: 200px; }
+
+/* Center Display */
+.lab-center-display {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: var(--color-surface);
+    background-image: url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=800&q=80');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(0,0,0,0.1);
+    transition: opacity 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.lab-center-display::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(235, 229, 217, 0.85);
+    z-index: 1;
+}
+
+.lab-center-display.fading {
+    opacity: 0;
+}
+
+.center-content {
+    position: relative;
+    z-index: 2;
+    padding: var(--spacing-md);
+}
+
+.center-content h3 {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.center-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .coffee-wheel-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding-top: var(--spacing-lg);
+    }
+    .wheel-svg-lines {
+        display: none; /* Hide SVG in mobile/tablet */
+    }
+    .wheel-node {
+        position: static;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .lab-center-display {
+        width: 320px;
+        height: 320px;
+        margin: 30px 0;
+        order: -1; /* Move center circle to top */
+    }
+}
+
+/* Pilares Section (Onyx Seed to Cup style) */
+.pilares-section {
+    width: 100%;
+    background-color: var(--color-pizarra-oscura);
+    padding-bottom: 0;
+    overflow-x: hidden;
+}
+
+.pilares-section .section-title {
+    color: var(--color-papel-arroz-claro);
+}
+
+.pilares-section .macro-typography {
+    color: #FFFFFF;
+    opacity: 0.05;
+}
+
+.pilares-container {
+    display: flex;
+    width: 100%;
+    height: 65vh;
+    gap: 1px;
+    background-color: rgba(0, 0, 0, 0.06);
+    position: relative;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.pilares-container::before {
+    content: '';
+    position: absolute;
+    left: -5px; right: -5px;
+    top: -1px; bottom: -1px;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    pointer-events: none;
+    z-index: 10;
+}
+
+.pilar-col {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: var(--spacing-xl) 0;
+    cursor: pointer;
+    background-color: var(--color-background); /* fallback if image not loaded to preserve 1px gap visual */
+}
+
+.pilar-bg-img {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: grayscale(100%) brightness(0.4);
+    transition: transform 1.5s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pilar-col::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to bottom, rgba(181, 128, 93, 0) 0%, rgba(181, 128, 93, 0) 100%);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1;
+}
+
+.pilar-col:hover .pilar-bg-img, .pilar-col:focus-within .pilar-bg-img {
+    transform: scale(1.08);
+    filter: grayscale(0%) brightness(0.6);
+}
+
+.pilar-col:hover::before {
+    background: linear-gradient(to bottom, rgba(181, 128, 93, 0.2) 0%, rgba(20, 10, 5, 0.8) 100%);
+}
+
+.pilar-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.pilar-num {
+    display: block;
+    font-family: var(--font-serif);
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--color-papel-arroz-claro);
+    line-height: 1;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.pilar-title {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-papel-arroz-claro);
+}
+
+@media (max-width: 768px) {
+    .pilares-container {
+        flex-direction: column;
+        height: auto;
+    }
+    .pilar-col {
+        height: 150px;
+        flex: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 var(--spacing-lg);
+    }
+    .pilar-col:hover {
+        flex-grow: 0;
+        height: 160px; /* Slight expansion on tap/hover */
+    }
+    .pilar-content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-align: left;
+    }
+    .pilar-num {
+        margin-bottom: 0;
+        font-size: 3rem;
+    }
+}
+
+/* ===================================================
+   Brand Presentation Block
+   =================================================== */
+.brand-presentation {
+    text-align: center;
+    /* Fondo oscuro propio: la menu-section es beige, este bloque crea su isla oscura */
+    background-color: var(--color-noche-andina);
+    padding: 5rem 2rem 4.5rem;
+    /* Full-bleed horizontal dentro del container */
+    margin-left: calc(-1 * var(--spacing-sm));
+    margin-right: calc(-1 * var(--spacing-sm));
+    margin-bottom: 3rem;
+}
+
+
+.brand-presentation__title {
+    font-family: var(--font-primary);
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    /* Verde Kapulí — color de marca sobre fondo noche-andina */
+    color: var(--color-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.1;
+}
+
+.brand-presentation__manifesto {
+    font-family: var(--font-primary);
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    font-weight: 300;
+    line-height: 1.8;
+    /* Opacity elevada a 0.85 para contraste WCAG AA sobre fondo oscuro */
+    color: rgba(224, 216, 200, 0.85);
+    max-width: 720px;
+    margin: 0 auto;
+    letter-spacing: 0.01em;
+}
+
+@media (max-width: 768px) {
+    .brand-presentation {
+        padding: 3.5rem 1.5rem 3rem;
+        margin-left: calc(-1 * var(--spacing-sm));
+        margin-right: calc(-1 * var(--spacing-sm));
+    }
+    .brand-presentation__title {
+        letter-spacing: 0.1em;
+    }
+}

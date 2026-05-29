@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kapulicafe.github.io/kapuli-cafe/sitemap.xml

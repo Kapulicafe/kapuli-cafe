@@ -1,0 +1,51 @@
+/* Variables de CSS (Modo Oscuro Orgánico — Papel de Arroz) */
+:root {
+/* === Paleta Orgánica Principal === */
+    --color-papel-arroz: #E0D8C8;           /* Tono principal cálido y orgánico (Fondo) */
+    --color-papel-arroz-claro: #EBE5D9;     /* Superficies más claras */
+    --color-naranja-alpinista: #E66A35;      /* Acento secundario vibrante */
+    --color-cereza-sangre: #A93226;          /* Acción principal (CTA) */
+    --color-fondo-oscuro: #1A1816;           /* Tinta oscura para texto */
+    --color-texto-secundario: #5C554D;       /* Textos de párrafo menos prioritarios */
+
+    /* Colores derivados de la marca */
+    --color-primary: #A66E4A;                /* Marrón Kapulí oscurecido para contraste */
+    --color-primary-hover: #8C5838;
+    --color-secondary: #3D8271;              /* Verde Kapulí oscuro para contraste */
+    --color-secondary-hover: #2F6456;
+    --color-background: var(--color-papel-arroz);
+    --color-surface: var(--color-papel-arroz-claro);
+    --color-text-main: var(--color-fondo-oscuro);
+    --color-text-muted: var(--color-texto-secundario);
+    --color-border: #C8BFA9;                 /* Borde sutil orgánico */
+
+    /* Tonos de contraste */
+    --color-liquen-profundo: #D3C9B5;        /* Reasignado a un tono claro para tarjetas */
+    --color-terracota-ceniza: #8D6A58;
+    --color-pizarra-cumbres: #CBBCA3;        /* Fondo alternativo claro */
+    --color-pizarra-oscura: #2C3A40;         /* Fondo oscuro intermedio */
+    --color-noche-andina: #1E2326;           /* Fondo más oscuro profundo */
+    
+    /* Tipografía de la Marca */
+    --font-primary: 'Intro', 'Montserrat', sans-serif;
+    --font-secondary: 'Intro', 'Montserrat', sans-serif;
+    --font-serif: 'Cormorant Garamond', serif;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 6rem;
+
+    /* Borders & Shadows (Estilo Brutalista) */
+    --border-radius: 0px;
+    --shadow-sm: none;
+    --shadow-md: none;
+    --border-width: 1px;
+    --border-solid: var(--border-width) solid var(--color-noche-andina);
+
+    /* Cursor Personalizado */
+    --cursor-main: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM1NDZFN0EiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KICA8cGF0aCBkPSJNMTkuNyAxM2MwLTMuMy0zLjctNy04LjctN1MyLjMgOS43IDIuMyAxM3MzLjcgNyA4LjcgN3M4LjctMy43IDguNy03eiIvPgogIDxwYXRoIGQ9Ik0xNS43IDEzYy0xLjMtMS4zLTMuNy0yLTUuNy0ycy00LjQuNy01LjcgMiIvPgo8L3N2Zz4=') 16 16, auto;
+}
+

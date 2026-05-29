@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 – Kapulí Café</title>
+    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/png" href="assets/brand/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html, body {
+            height: 100%;
+            background-color: #000000;
+            color: #F4F1EA;
+            font-family: 'Montserrat', sans-serif;
+            overflow: hidden;
+        }
+
+        .page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+        }
+
+        /* Macro watermark */
+        .watermark {
+            position: absolute;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 22rem;
+            font-weight: 900;
+            color: #ffffff;
+            opacity: 0.02;
+            pointer-events: none;
+            user-select: none;
+            line-height: 1;
+            white-space: nowrap;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .logo {
+            width: 80px;
+            margin-bottom: 3rem;
+            opacity: 0.6;
+        }
+
+        .code {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(4rem, 15vw, 10rem);
+            font-weight: 600;
+            letter-spacing: -4px;
+            line-height: 1;
+            color: #F4F1EA;
+            margin-bottom: 1.5rem;
+        }
+
+        .headline {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(1.2rem, 4vw, 2rem);
+            font-weight: 400;
+            font-style: italic;
+            letter-spacing: 1px;
+            color: #F4F1EA;
+            margin-bottom: 1rem;
+        }
+
+        .subtext {
+            font-size: 0.9rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: rgba(244, 241, 234, 0.5);
+            margin-bottom: 3rem;
+            max-width: 400px;
+        }
+
+        /* Cinematic underline link */
+        .back-link {
+            position: relative;
+            padding-bottom: 5px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #c5a880;
+            text-decoration: none;
+        }
+
+        .back-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #c5a880;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .back-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        /* Divider line */
+        .divider {
+            width: 40px;
+            height: 1px;
+            background-color: rgba(197, 168, 128, 0.4);
+            margin: 0 auto 2rem;
+        }
+
+        @media (max-width: 480px) {
+            .watermark { font-size: 10rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="watermark">404</div>
+
+        <img src="assets/brand/logo.png" alt="Logotipo oficial de Kapulí Café - Refugio de montaña y café biodinámico" class="logo">
+
+        <p class="code">404 🏔️</p>
+        <h1 class="headline">Te has desviado de la ruta</h1>
+        <div class="divider"></div>
+        <p class="subtext">El camino que buscas no existe. Descansa en el refugio.</p>
+
+        <a href="https://kapulicafe.github.io/kapuli-cafe/" class="back-link">← Volver al Refugio</a>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Comprobar si el usuario viene de la previsualización
+            const isPreview = sessionStorage.getItem('preview_active') === 'true' || 
+                              document.referrer.includes('preview.html');
+            if (isPreview) {
+                sessionStorage.setItem('preview_active', 'true'); // Asegurar persistencia
+                const backLink = document.querySelector('.back-link');
+                if (backLink) {
+                    backLink.href = 'preview.html';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

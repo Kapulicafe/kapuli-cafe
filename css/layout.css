@@ -1,0 +1,706 @@
+/* Layout y Estructura Principal */
+
+/* Splash Screen */
+.splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-background);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-out;
+}
+
+.splash-content {
+    text-align: center;
+}
+
+.splash-logo {
+    height: 280px;
+    width: auto;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.pulse-text {
+    color: var(--color-secondary);
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.6; transform: scale(0.98); }
+    50% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0.6; transform: scale(0.98); }
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+section {
+    padding: var(--spacing-xl) 0;
+    transition: opacity 1s ease, visibility 1s ease;
+    border-bottom: var(--border-solid);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-text-main);
+    font-weight: 800; /* Brutalista/bold */
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    line-height: 1;
+}
+
+.section-title em {
+    font-style: italic;
+    color: var(--color-primary); /* Acento sutil en cursiva */
+}
+
+.section-title span {
+    color: var(--color-primary); /* Acento sutil en alguna palabra si se desea */
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-terracota-ceniza);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1E2326;
+    color: #E0D8C8;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease, opacity 1s ease, visibility 1s ease;
+}
+
+.header.scrolled {
+    background-color: rgba(30, 35, 38, 0.98); /* #1E2326 más sólido */
+    box-shadow: var(--shadow-sm);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) var(--spacing-md);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: var(--color-text-main);
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.navbar-brand-name {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: var(--color-papel-arroz);
+    text-transform: uppercase;
+    line-height: 1;
+    user-select: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.nav-links a {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #E0D8C8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 4px;
+    text-decoration: none;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-naranja-alpinista);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-links a:hover::after, .nav-links a:focus::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.nav-links a:hover, .nav-links a:focus {
+    color: var(--color-naranja-alpinista);
+}
+
+.lang-selector button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px 8px;
+    font-weight: 700;
+    color: #E0D8C8; /* color actualizado */
+    font-family: var(--font-primary);
+    transition: color 0.3s ease;
+}
+
+.lang-selector button:hover {
+    color: var(--color-primary);
+}
+
+.lang-selector button.active {
+    color: var(--color-secondary); /* Verde Kapulí para el activo */
+}
+
+/* Hero Section Split Layout */
+.hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: var(--color-background);
+    padding-top: 85px; /* Compensa el header fijo */
+    color: var(--color-text-main);
+}
+
+.hero-left {
+    padding: var(--spacing-lg) var(--spacing-xl);
+    text-align: left;
+}
+
+.hero-right {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: var(--spacing-md);
+}
+
+.hero-right img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+}
+
+.hero h2 {
+    font-family: var(--font-serif);
+    font-size: 5.5rem; /* Gigante */
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-sm);
+    font-weight: 500;
+    letter-spacing: -2px; /* Espaciado muy ajustado tipo Onyx */
+    line-height: 1;
+    animation: heroBreathe 4s infinite ease-in-out;
+}
+
+@keyframes heroBreathe {
+    0% { transform: scale(1); opacity: 0.95; }
+    50% { transform: scale(1.02); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.95; }
+}
+
+.hero h2 em {
+    font-style: italic;
+    color: var(--color-primary);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-lg);
+    font-weight: 300;
+    color: var(--color-text-muted);
+}
+
+/* Secciones Específicas */
+.menu-section {
+    background-color: var(--color-background);
+}
+
+.menu-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.market-section {
+    background-color: var(--color-surface);
+}
+
+.community-section {
+    background-color: var(--color-pizarra-oscura);
+    color: var(--color-papel-arroz-claro);
+}
+
+.community-section .section-title {
+    color: var(--color-papel-arroz-claro);
+}
+
+.community-section .section-subtitle {
+    color: var(--color-papel-arroz);
+}
+
+/* Community Grid */
+.community-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+}
+
+.community-row {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: stretch;
+}
+
+.community-row--reverse {
+    flex-direction: row-reverse;
+}
+
+.community-img-wrap {
+    flex: 1;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    min-height: 300px;
+}
+
+.community-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.community-img-wrap:hover .community-img {
+    transform: scale(1.05);
+}
+
+.community-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    height: fit-content;
+    align-self: center;
+}
+
+@media (max-width: 768px) {
+    .community-row, .community-row--reverse {
+        flex-direction: column;
+    }
+    
+    .community-img-wrap {
+        min-height: 250px;
+    }
+}
+
+/* Zen Quotes Section */
+.zen-section {
+    background-color: var(--color-noche-andina);
+    padding: var(--spacing-lg) 0;
+    text-align: center;
+    border-top: none;
+    border-bottom: none;
+}
+
+.zen-quote-container {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-style: italic;
+    color: var(--color-papel-arroz-claro);
+    letter-spacing: 2px;
+    line-height: 1.8;
+}
+
+.zen-quote-author {
+    display: block;
+    margin-top: var(--spacing-md);
+    font-size: 0.9rem;
+    color: var(--color-naranja-alpinista);
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+.vibes-section {
+    background-color: var(--color-background);
+}
+
+.spotify-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.events-section {
+    background-color: var(--color-background);
+    color: var(--color-text-main);
+    text-align: center;
+}
+
+.events-section .section-title {
+    color: var(--color-text-main);
+}
+
+.social-section {
+    background-color: var(--color-background);
+}
+
+/* Responsabilidad Social Section */
+.responsabilidad-section {
+    background-color: var(--color-noche-andina);
+    color: var(--color-papel-arroz-claro);
+    text-align: center;
+}
+
+.responsabilidad-section .section-title {
+    color: var(--color-papel-arroz-claro);
+}
+
+.responsabilidad-section .section-title em {
+    color: var(--color-secondary); /* Verde Kapulí como acento */
+}
+
+.responsabilidad-section .section-subtitle {
+    color: rgba(224, 216, 200, 0.8);
+    max-width: 720px;
+}
+
+/* Enlace "Construyendo Sonrisas" — Cian Turquesa del logo de la iniciativa */
+.link-sonrisas {
+    color: #12A2A9;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.link-sonrisas:hover {
+    color: var(--color-naranja-alpinista, #E66A35);
+    text-decoration: underline;
+}
+
+
+/* Footer */
+.footer {
+    background-color: var(--color-pizarra-oscura);
+    color: var(--color-papel-arroz-claro);
+    padding: var(--spacing-xl) 0 var(--spacing-md);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.footer h3 {
+    color: var(--color-primary);
+}
+
+/* Social icons in footer */
+.footer-social-icons {
+    display: flex;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-papel-arroz);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social-link:hover {
+    color: var(--color-naranja-alpinista);
+    transform: translateY(-2px);
+}
+
+.footer-social-link svg {
+    flex-shrink: 0;
+    transition: color 0.3s ease;
+}
+
+/* Follow label in right column */
+.footer-follow-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--color-terracota-ceniza);
+    margin-bottom: 0.25rem;
+}
+
+/* Google Maps link contrast fix */
+.footer-map-btn {
+    color: var(--color-papel-arroz) !important;
+    letter-spacing: 2px;
+}
+
+.footer-map-btn::after {
+    background-color: var(--color-naranja-alpinista);
+}
+
+.footer-map-btn:hover {
+    color: var(--color-naranja-alpinista) !important;
+}
+
+/* Animaciones */
+@keyframes fadeInUP {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Scroll Reveal Animation */
+.reveal-text {
+    opacity: 0;
+    transform: translateY(60px) scale(0.98);
+    transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, opacity;
+}
+
+.reveal-text.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Responsive y Drawer Mobile */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--color-text-main);
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostrar botón hamburguesa en móviles */
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Oculto por defecto */
+        width: 80%;
+        max-width: 400px;
+        height: 100vh;
+        background-color: var(--color-surface);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.4s ease-in-out;
+        z-index: 1500;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+    }
+
+    .nav-links.open {
+        right: 0; /* Mostrar drawer */
+    }
+
+    .nav-links li {
+        margin: var(--spacing-md) 0;
+    }
+
+    .nav-links a {
+        font-size: 1.5rem; /* Enlaces grandes para tap */
+    }
+    
+    .hero {
+        grid-template-columns: 1fr;
+        padding-top: 100px;
+    }
+    
+    .hero-left {
+        padding: var(--spacing-md);
+    }
+    
+    .hero-right {
+        padding: 0 var(--spacing-md) var(--spacing-md) var(--spacing-md);
+    }
+    
+    .hero-right img {
+        height: 50vh;
+    }
+
+    .hero h2 {
+        font-size: 3.5rem;
+        letter-spacing: -1px;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 3.5rem;
+        letter-spacing: -1px;
+    }
+
+    .splash-logo {
+        height: 180px; /* Tamaño optimizado en móvil */
+    }
+
+    #navbar-logo {
+        height: 80px !important; /* Tamaño consistente en móvil */
+    }
+}
+
+/* Macro Tipografía Estructural */
+.macro-typography {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18rem;
+    font-weight: 900;
+    color: #000000;
+    opacity: 0.03;
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+    line-height: 1;
+    font-family: var(--font-serif);
+    white-space: nowrap;
+}
+
+#mountain-dashboard .macro-typography {
+    font-size: 12rem;
+    color: var(--color-cereza-sangre);
+    opacity: 0.05;
+}
+
+/* Ticker Tape (Marquee) */
+.ticker-wrap {
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--color-noche-andina);
+    color: var(--color-papel-arroz);
+    padding: 12px 0;
+    box-sizing: border-box;
+    border-bottom: var(--border-solid);
+    border-top: var(--border-solid);
+    display: flex;
+}
+
+.ticker {
+    display: flex;
+    white-space: nowrap;
+    animation: ticker-anim 30s linear infinite;
+}
+
+.ticker-item {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 0 3rem;
+    letter-spacing: 2px;
+}
+
+@keyframes ticker-anim {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-50%, 0, 0); }
+}
+
+/* Sección Experiencia Kapulí (Galería Brutalista) */
+.experiencia-section {
+    padding-bottom: 0;
+}
+
+.experiencia-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 0;
+    width: 100%;
+    border-top: var(--border-solid);
+}
+
+.experiencia-item {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-right: var(--border-solid);
+    border-bottom: var(--border-solid);
+    background-color: var(--color-noche-andina);
+}
+
+.experiencia-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.experiencia-item:hover img {
+    transform: scale(1.05);
+}

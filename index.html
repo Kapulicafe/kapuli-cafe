@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapulí Café | El refugio donde tu ruta toma un respiro</title>
+    <meta name="description" content="Kapulí Café: Tu refugio saludable en Huaraz. Café de especialidad, comunidad de montañismo y running, y comida nutritiva para tus aventuras.">
+    <meta name="keywords" content="Café de especialidad en Huaraz, Montañismo, Running, Refugio saludable, Cafetería en Huaraz, Café de origen">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Kapulí Café | El refugio donde tu ruta toma un respiro">
+    <meta property="og:description" content="Café de especialidad de La Chacra D'dago y energía saludable para seguir en movimiento.">
+    <meta property="og:image" content="https://kapulicafe.github.io/kapuli-cafe/assets/brand/logo.png">
+    <meta property="og:url" content="https://kapulicafe.github.io/kapuli-cafe/">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/brand/logo.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    
+    <!-- Google Fonts Fallback (Montserrat & Cormorant Garamond) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- JSON-LD SEO Local -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CafeOrCoffeeShop",
+      "name": "Kapulí Café",
+      "image": "https://kapulicafe.github.io/kapuli-cafe/assets/brand/logo.png",
+      "url": "https://kapulicafe.github.io/kapuli-cafe/",
+      "telephone": "+51999999999",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Pasaje Daniel Coral Vega 566",
+        "addressLocality": "Huaraz",
+        "addressRegion": "Ancash",
+        "postalCode": "02001",
+        "addressCountry": "PE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -9.5292415,
+        "longitude": -77.5303254
+      },
+      "servesCuisine": [
+        "Café de especialidad y biodinámico",
+        "Comida saludable"
+      ],
+      "description": "Café de especialidad y biodinámico, comunidad de montañismo y running, y comida nutritiva para tus aventuras."
+    }
+    </script>
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <img src="assets/brand/logo.png" alt="Logotipo oficial de Kapulí Café - Especialidad y Biodinámico en Huaraz" class="splash-logo">
+            <h2 class="pulse-text" data-i18n="hero.slogan" style="font-family: var(--font-serif);">El refugio donde tu ruta toma un respiro</h2>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="assets/brand/logo.png" alt="Logotipo de Kapulí Café, cafetería de especialidad y comunidad de running en Huaraz" id="navbar-logo" style="height: 83px; width: auto; object-fit: contain;">
+                <span class="navbar-brand-name">KAPULÍ CAFÉ</span>
+            </div>
+            
+            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Abrir menú">☰</button>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="nav-item" data-i18n="nav.home">Inicio</a></li>
+                <li><a href="#menu" class="nav-item" data-i18n="nav.menu">Nosotros</a></li>
+                <li><a href="#market" class="nav-item" data-i18n="nav.market">Market</a></li>
+                <li><a href="#community" class="nav-item" data-i18n="nav.community">Comunidad</a></li>
+                <li><a href="#events" class="nav-item" data-i18n="nav.events">Eventos</a></li>
+            </ul>
+            <div class="lang-selector">
+                <button id="btn-es" class="active" aria-label="Cambiar a Español">ES</button>
+                <button id="btn-en" aria-label="Cambiar a Inglés">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-left">
+                <h2 class="reveal-text" data-i18n="hero.slogan">El refugio donde tu ruta toma un respiro</h2>
+                <p class="reveal-text" data-i18n="hero.description">Café de especialidad y energía saludable para seguir en movimiento</p>
+                <a href="javascript:void(0)" class="btn btn-primary reveal-text" data-i18n="hero.cta">Ver Carta</a>
+            </div>
+            <div class="hero-right reveal-text">
+                <img src="assets/images/kapuli-hero.webp" alt="Interior acogedor de Kapulí Café en Huaraz - Refugio de montaña y café de especialidad">
+            </div>
+        </section>
+
+        <!-- Ticker Tape -->
+        <div class="ticker-wrap">
+            <div class="ticker">
+                <span class="ticker-item" data-i18n="ticker.specialty">Café de Especialidad</span>
+                <span class="ticker-item">|</span>
+                <span class="ticker-item" data-i18n="ticker.biodynamic">Café <span style="color: var(--color-secondary);">Biodinámico</span></span>
+                <span class="ticker-item">|</span>
+                <span class="ticker-item" data-i18n="ticker.energy">Energía Saludable</span>
+                <span class="ticker-item">|</span>
+                <span class="ticker-item" data-i18n="ticker.huaraz">Huaraz</span>
+                <span class="ticker-item">|</span>
+                <span class="ticker-item" data-i18n="ticker.running">Running</span>
+                <span class="ticker-item">|</span>
+                <span class="ticker-item" data-i18n="ticker.mountain">Comunidad de Montaña</span>
+                <span class="ticker-item">|</span>
+                <span class="ticker-item" data-i18n="ticker.specialty">Café de Especialidad</span>
+                <span class="ticker-item">|</span>
+                <span class="ticker-item" data-i18n="ticker.biodynamic">Café <span style="color: var(--color-secondary);">Biodinámico</span></span>
+                <span class="ticker-item">|</span>
+                <span class="ticker-item" data-i18n="ticker.energy">Energía Saludable</span>
+                <span class="ticker-item">|</span>
+                <span class="ticker-item" data-i18n="ticker.huaraz">Huaraz</span>
+                <span class="ticker-item">|</span>
+                <span class="ticker-item" data-i18n="ticker.running">Running</span>
+                <span class="ticker-item">|</span>
+                <span class="ticker-item" data-i18n="ticker.mountain">Comunidad de Montaña</span>
+                <span class="ticker-item">|</span>
+            </div>
+        </div>
+
+        <!-- Presentación Institucional de Marca + Nuestra Oferta -->
+        <section id="menu" class="menu-section">
+            <div class="container">
+
+                <!-- Brand Presentation Block -->
+                <div class="brand-presentation">
+                    <h2 class="brand-presentation__title" data-i18n="brand.title">KAPULÍ CAFÉ</h2>
+                    <p class="brand-presentation__manifesto" data-i18n="brand.manifesto">Un refugio en el corazón de Huaraz diseñado para quienes viven en movimiento. Somos una cafetería de especialidad y una comunidad activa que fusiona la cultura de la montaña y el trail running con el primer café <span style="color: var(--color-secondary);">biodinámico</span> del Perú, proveniente de La Chacra D'dago. Nuestro enfoque está en brindar energía limpia, saludable y consciente para tus rutas, trabajando en armonía con el entorno andino y el destino de nuestra comunidad. Aquí, cada taza es el punto de encuentro perfecto para planificar la próxima cumbre o recuperar fuerzas post-ruta.</p>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Origin Block: Café Biodinámico -->
+        <section id="coffee-lab-section" class="lab-section reveal-text">
+            <div class="container">
+                <h2 class="section-title reveal-text" data-i18n="origin.title">NUESTRO ORIGEN: CAFÉ <em style="color: var(--color-secondary);">BIODINÁMICO</em></h2>
+                <div class="community-grid">
+                    <div class="community-row">
+                        <div class="community-img-wrap">
+                            <img src="assets/images/kapuli-chacra.webp" alt="La Chacra D'Dago, origen de nuestro café biodinámico" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div class="category-card community-card" style="text-align: left;">
+                            <p id="lab-desc" style="font-family: var(--font-primary); border:none; margin-bottom: 1.5rem;" data-i18n="origin.desc">Cultivado en <strong>La Chacra D'Dago</strong>, una finca familiar enfocada en la agricultura <span style="color: var(--color-secondary);">biodinámica</span>. Un modelo regenerativo, guiado por el calendario lunar, que respeta la biodiversidad y beneficia tanto a la comunidad como al planeta.</p>
+                            <ul style="list-style: none; padding: 0; margin: 0; font-family: var(--font-primary);">
+                                <li style="margin-bottom: 0.5rem;" data-i18n="origin.score"><strong style="color: #12A2A9;">Puntaje SCA:</strong> 84.5</li>
+                                <li style="margin-bottom: 0.5rem;" data-i18n="origin.notes"><strong style="color: #12A2A9;">Notas:</strong> Melaza, durazno, cítrico y miel</li>
+                                <li style="margin-bottom: 0.5rem;" data-i18n="origin.height"><strong style="color: #12A2A9;">Altura:</strong> 1550 - 1750 msnm</li>
+                                <li data-i18n="origin.certs"><strong style="color: #12A2A9;">Certificaciones:</strong> B Corporation, Demeter, USDA Organic</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Market -->
+        <section id="market" class="market-section">
+            <div class="container">
+                <h2 class="section-title reveal-text" data-i18n="market.title">Lleva <em>Kapulí</em> Contigo</h2>
+                <p class="section-subtitle reveal-text" data-i18n="market.description">Descubre nuestro merchandising y productos locales.</p>
+                <div class="market-gallery">
+                    <div class="market-item">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Taza de cerámica Kapulí Café - Merchandising oficial para amantes de la montaña y el café">
+                    </div>
+                    <div class="market-item">
+                        <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&fit=crop&w=600&q=80" alt="Café en grano de especialidad y de origen biodinámico La Chacra D'dago para preparar en casa">
+                    </div>
+                    <div class="market-item">
+                        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=80" alt="Prensa francesa de café para montañistas y campamentos al aire libre en Huaraz">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comunidad -->
+        <section id="community" class="community-section">
+            <div class="container">
+                <h2 class="section-title reveal-text" data-i18n="community.title">Únete a la <em>Comunidad</em> Kapulí</h2>
+                <p class="section-subtitle reveal-text" data-i18n="community.description">Más que clientes, somos una comunidad en movimiento.</p>
+                <div class="community-grid">
+
+                    <!-- Fila 1: Imagen izquierda · Tarjeta Running Club derecha -->
+                    <div class="community-row">
+                        <div class="community-img-wrap">
+                            <img src="assets/images/kapuli-Running2.webp" alt="Salida grupal del Running Club Kapulí por los senderos de Huaraz" class="community-img" loading="lazy">
+                        </div>
+                        <div class="category-card community-card">
+                            <h3><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: sub; margin-right: 4px;"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg> <span data-i18n="community_cards.running_title">Running Club</span></h3>
+                            <p class="product-list" style="border:none;" data-i18n="community_cards.running_desc">Salidas grupales todos los domingos. ¡Todos los ritmos bienvenidos! Corre con nosotros por los senderos de Huaraz.</p>
+                            <div style="display: flex; flex-direction: column; gap: 1rem; align-items: center; margin-top: 1rem;">
+                                <a href="#" class="btn btn-primary" aria-label="Unirse a la próxima salida" data-i18n="community_cards.running_cta">Únete a nuestra próxima salida</a>
+                                <a href="https://strava.app.link/6fmPBJtrm3b" target="_blank" rel="noopener noreferrer" class="btn-strava" style="color: #FC4C02; font-weight: 700; letter-spacing: 1px; font-size: 0.9rem;" data-i18n="community_cards.strava">SÍGUENOS EN STRAVA</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fila 2: Tarjeta Eventos izquierda · Imagen derecha -->
+                    <div class="community-row community-row--reverse">
+                        <div class="category-card community-card">
+                            <h3><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: sub; margin-right: 4px;"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg> <span data-i18n="community_cards.events_title">Eventos y Charlas</span></h3>
+                            <p class="product-list" style="border:none;" data-i18n="community_cards.events_desc">Proyecciones, charlas técnicas y café post-ruta. Aprende, comparte y disfruta de la cultura de montaña.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Citas Zen y Refugio Literario -->
+        <section id="zen-quotes" class="zen-section">
+            <div class="container">
+                <div id="zen-quote-container" class="zen-quote-container reveal-text" style="margin-bottom: var(--spacing-lg);">
+                    <!-- El contenido será inyectado por main.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Alquiler / Eventos -->
+        <section id="events" class="events-section">
+            <div class="container">
+                <h2 class="section-title reveal-text" data-i18n="events.title">Celebra en <em>Kapulí</em></h2>
+                <p class="section-subtitle reveal-text" data-i18n="events.description">¿Buscas un lugar único para tus eventos, talleres o reuniones? Kapulí Café te ofrece un ambiente cálido y equipado en el corazón de Huaraz.</p>
+                
+                <div class="menu-categories" style="margin-bottom: var(--spacing-lg);">
+                    <div class="category-card" style="text-align: left;">
+                        <h3><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: sub; margin-right: 4px;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg> <span data-i18n="events_cards.capacity_title">Capacidad Flexible</span></h3>
+                        <p class="product-list" style="border:none;" data-i18n="events_cards.capacity_desc">Ideal para grupos pequeños y medianos. Configuración adaptable a tus necesidades.</p>
+                    </div>
+                    <div class="category-card" style="text-align: left;">
+                        <h3><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: sub; margin-right: 4px;"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg> <span data-i18n="events_cards.equipment_title">Equipamiento Completo</span></h3>
+                        <p class="product-list" style="border:none;" data-i18n="events_cards.equipment_desc">Wi-Fi de alta velocidad, proyector y sistema de sonido disponibles.</p>
+                    </div>
+                </div>
+
+                <!-- Event Images Grid -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-md); margin-bottom: var(--spacing-xl);">
+                    <img src="https://images.unsplash.com/photo-1556742049-9caa11a9b59c?q=80&w=800&auto=format&fit=crop" alt="Evento en cafetería" style="width:100%; height:300px; object-fit:cover; border-radius:4px;">
+                    <img src="https://images.unsplash.com/photo-1517486300435-081e649033a8?q=80&w=800&auto=format&fit=crop" alt="Taller y café" style="width:100%; height:300px; object-fit:cover; border-radius:4px;">
+                </div>
+                
+                <a href="#" class="btn btn-primary" style="font-size: 1.1rem;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: text-bottom; margin-right: 4px;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg> <span data-i18n="events_cards.cta">Consultar Disponibilidad</span></a>
+            </div>
+        </section>
+
+
+        <!-- Experiencia Kapulí (Galería) -->
+        <section id="experiencia" class="experiencia-section">
+            <h2 class="section-title reveal-text" data-i18n="social.title">EXPERIENCIA KAPULÍ</h2>
+            <div class="experiencia-grid">
+
+                <div class="experiencia-item"><img src="assets/images/EXPERIENCIA%20KAPULI/kapuli-galeria-6.webp" alt="Experiencia Kapulí" loading="lazy"></div>
+
+                <div class="experiencia-item"><img src="assets/images/EXPERIENCIA%20KAPULI/kapuli-galeria-14.webp" alt="Experiencia Kapulí" loading="lazy"></div>
+                <div class="experiencia-item"><img src="assets/images/EXPERIENCIA%20KAPULI/kapuli-galeria-20.webp" alt="Experiencia Kapulí" loading="lazy"></div>
+                <div class="experiencia-item"><img src="assets/images/EXPERIENCIA%20KAPULI/kapuli-galeria-31.webp" alt="Experiencia Kapulí" loading="lazy"></div>
+                <div class="experiencia-item"><img src="assets/images/EXPERIENCIA%20KAPULI/kapuli-galeria-32.webp" alt="Experiencia Kapulí" loading="lazy"></div>
+                <div class="experiencia-item"><img src="assets/images/EXPERIENCIA%20KAPULI/kapuli-galeria-35.webp" alt="Experiencia Kapulí" loading="lazy"></div>
+
+                <div class="experiencia-item"><img src="assets/images/EXPERIENCIA%20KAPULI/kapuli-galeria-42.webp" alt="Experiencia Kapulí" loading="lazy"></div>
+                <div class="experiencia-item"><img src="assets/images/EXPERIENCIA%20KAPULI/kapuli-galeria-58.webp" alt="Experiencia Kapulí" loading="lazy"></div>
+                <div class="experiencia-item"><img src="assets/images/EXPERIENCIA%20KAPULI/kapuli-galeria-63.webp" alt="Experiencia Kapulí" loading="lazy"></div>
+                <div class="experiencia-item"><img src="assets/images/EXPERIENCIA%20KAPULI/kapuli-galeria-68.webp" alt="Experiencia Kapulí" loading="lazy"></div>
+                <div class="experiencia-item"><img src="assets/images/EXPERIENCIA%20KAPULI/kapuli-galeria-80.webp" alt="Experiencia Kapulí" loading="lazy"></div>
+                <div class="experiencia-item"><img src="assets/images/EXPERIENCIA%20KAPULI/kapuli-galeria-82.webp" alt="Experiencia Kapulí" loading="lazy"></div>
+                <div class="experiencia-item"><img src="assets/images/EXPERIENCIA%20KAPULI/kapuli-galeria-83.webp" alt="Experiencia Kapulí" loading="lazy"></div>
+                <div class="experiencia-item"><img src="assets/images/EXPERIENCIA%20KAPULI/kapuli-galeria-84.webp" alt="Experiencia Kapulí" loading="lazy"></div>
+                <div class="experiencia-item"><img src="assets/images/EXPERIENCIA%20KAPULI/kapuli-galeria-85.webp" alt="Experiencia Kapulí" loading="lazy"></div>
+
+                <div class="experiencia-item"><img src="assets/images/EXPERIENCIA%20KAPULI/kapuli-galeria-87.webp" alt="Experiencia Kapulí" loading="lazy"></div>
+            </div>
+        </section>
+    </main>
+
+    <section id="responsabilidad-social" class="responsabilidad-section">
+        <div class="container">
+            <h2 class="section-title reveal-text" data-i18n="social_responsibility.title">RESPONSABILIDAD <em>SOCIAL</em></h2>
+            <p class="section-subtitle reveal-text" data-i18n="social_responsibility.desc1">Creemos en la sostenibilidad del entorno andino. Respetamos cada ruta de montaña, cuidamos el origen de nuestro café y trabajamos en armonía con la vida de nuestra comunidad.</p>
+            <p class="section-subtitle reveal-text" data-i18n="social_responsibility.desc2">Este compromiso trasciende nuestra barra. A través de <a href="https://www.instagram.com/construyendo.sonrisas___" target="_blank" rel="noopener noreferrer" class="link-sonrisas">Construyendo Sonrisas</a>, llevamos sonrisas y esperanza a los niños vulnerables de los pueblos de Huaraz. Porque cada taza que servimos es también una forma de devolver energía a nuestro destino.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>Kapulí Café</h3>
+                <p data-i18n="footer.address">Dirección: Pasaje Daniel Coral Vega 566 - Huaraz.</p>
+                <p data-i18n="footer.hours">Lunes a viernes de 8 am a 9 pm</p>
+            </div>
+            <div class="footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.208579040375!2d-77.5303254!3d-9.5292415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a90d10f130b05b%3A0x6b45a0ed79c2dc01!2sPasaje%20Daniel%20Coral%20Vega%20566%2C%20Huaraz%2002001%2C%20Peru!5e0!3m2!1sen!2sus!4v1715632120000!5m2!1sen!2sus" width="100%" height="250" style="border:0; border-radius: 8px; margin-bottom: 1rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br>
+                <a href="https://maps.app.goo.gl/ZvLGfyKCFGQQhLXx5" target="_blank" class="btn btn-secondary footer-map-btn" data-i18n="footer.map_btn">Ver en Google Maps</a>
+            </div>
+            <div class="footer-social">
+                <p class="footer-follow-label" data-i18n="footer.follow">Síguenos</p>
+                <div class="footer-social-icons">
+                    <a href="https://instagram.com/kapulicafe" target="_blank" rel="noopener noreferrer" aria-label="Kapulí Café en Instagram" class="footer-social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://facebook.com/kapulicafe" target="_blank" rel="noopener noreferrer" aria-label="Kapulí Café en Facebook" class="footer-social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://tiktok.com/@kapulicafe" target="_blank" rel="noopener noreferrer" aria-label="Kapulí Café en TikTok" class="footer-social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+                        <span>TikTok</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot / Botón Flotante -->
+    <a href="https://wa.me/51987256301?text=Hola%20Kapulí%20café" target="_blank" rel="noopener noreferrer" class="floating-chat" id="floating-chat" aria-label="Contactar por WhatsApp Business">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.477 2 2 6.03 2 11c0 2.85 1.487 5.383 3.8 7.02l-1.5 3.3c-.155.337.037.74.398.814l4.288-.868c.983.272 2.03.418 3.114.418 5.523 0 10-4.03 10-9s-4.477-9-10-9zm-3 10a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm3 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm3 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+        </svg>
+        <span data-i18n="chat.text">Chatea con nosotros</span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/translations.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

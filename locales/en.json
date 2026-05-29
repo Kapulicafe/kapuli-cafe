@@ -1,0 +1,57 @@
+{
+    "nav": {
+        "home": "Home",
+        "menu": "Our Menu",
+        "market": "Market",
+        "community": "Community",
+        "events": "Events"
+    },
+    "hero": {
+        "slogan": "The refuge where your trail takes a breath",
+        "description": "Your refuge in Huaraz. Specialty coffee and healthy energy for your mountain trails.",
+        "cta": "View Menu"
+    },
+    "menu": {
+        "title": "Our Menu",
+        "coffee": {
+            "title": "Specialty Coffee"
+        },
+        "breakfast": {
+            "title": "Healthy Breakfast"
+        },
+        "executive": {
+            "title": "Executive Menu"
+        },
+        "tasting": {
+            "citrus": "Citrus",
+            "chocolate": "Dark Chocolate",
+            "silky": "Silky Body"
+        },
+        "recovery": {
+            "title": "Mountain Recovery Drink 🏔️",
+            "desc": "Handcrafted hydrating beverage optimized for post-trail recovery"
+        }
+    },
+    "market": {
+        "title": "Take Kapulí With You",
+        "description": "Discover our merchandising and local products."
+    },
+    "community": {
+        "title": "Join the Kapulí Community",
+        "description": "Be part of our running groups, mountain outings, and social events."
+    },
+    "vibes": {
+        "title": "Kapulí Vibes"
+    },
+    "events": {
+        "title": "Celebrate at Kapulí",
+        "description": "Looking for a unique place for your events, workshops, or meetings? Kapulí Café offers a warm and fully equipped environment in the heart of Huaraz."
+    },
+    "social": {
+        "title": "KAPULÍ EXPERIENCE"
+    },
+    "footer": {
+        "address": "Address: Pasaje Daniel Coral Vega 566 - Huaraz.",
+        "map_btn": "View on Google Maps"
+    }
+}
