@@ -333,14 +333,14 @@
 
 /* Coffee Wheel Component (Onyx Style) */
 .lab-section {
-    background-color: var(--color-background) !important;
+    background-color: transparent !important;
     padding: var(--spacing-xl) 0;
-    color: var(--color-text-main);
+    color: inherit;
     overflow: hidden;
 }
 
 .lab-section .section-title {
-    color: var(--color-text-main);
+    color: inherit;
 }
 
 .lab-section .wheel-node {
