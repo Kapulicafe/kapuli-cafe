@@ -3,9 +3,12 @@ const appTranslations = {
         "nav": {
             "home": "Inicio",
             "menu": "Nosotros",
+            "origin": "Origen",
             "market": "Market",
             "community": "Comunidad",
-            "events": "Eventos"
+            "events": "Eventos",
+            "experience": "Experiencia",
+            "social": "Social"
         },
         "hero": {
             "slogan": "Pausa para recargar.",
@@ -97,9 +100,12 @@ const appTranslations = {
         "nav": {
             "home": "Home",
             "menu": "About Us",
+            "origin": "Origin",
             "market": "Market",
             "community": "Community",
-            "events": "Events"
+            "events": "Events",
+            "experience": "Experience",
+            "social": "Social"
         },
         "hero": {
             "slogan": "Pause to recharge.",
