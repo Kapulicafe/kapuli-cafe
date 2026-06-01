@@ -26,11 +26,11 @@ const appTranslations = {
         },
         "market": {
             "title": "Lleva Kapulí Contigo",
-            "description": "Descubre nuestro merchandising."
+            "description": "Parte de tu ecosistema diario."
         },
         "community": {
             "title": "Únete a la Comunidad Kapulí",
-            "description": "Forma parte de nuestros grupos de running, salidas de montaña y eventos sociales."
+            "description": "El movimiento que elige. El punto de encuentro de la comunidad activa en Huaraz."
         },
         "vibes": {
             "title": "Vibra con Kapulí"
@@ -56,7 +56,7 @@ const appTranslations = {
         "social_responsibility": {
             "title": "RESPONSABILIDAD <em>SOCIAL</em>",
             "desc1": "Creemos en la sostenibilidad del entorno andino. Respetamos cada ruta de montaña, cuidamos el origen de nuestro café y trabajamos en armonía con la vida de nuestra comunidad.",
-            "desc2": "Este compromiso trasciende nuestra barra. A través de <a href=\"https://www.instagram.com/construyendo.sonrisas___\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link-sonrisas\">Construyendo Sonrisas</a>, llevamos sonrisas y esperanza a los niños vulnerables de los pueblos de Huaraz. Porque cada taza que servimos es también una forma de devolver energía a nuestro destino."
+            "desc2": "Este compromiso trasciende nuestra barra. Impulsados por Helen y nuestra tribu, llevamos esperanza a los niños vulnerables de Huaraz a través de <a href=\"https://www.instagram.com/construyendo.sonrisas___\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link-sonrisas\">Construyendo Sonrisas</a>. Porque cada taza que servimos es también una forma de devolver energía a nuestro destino."
         },
         "footer": {
             "address": "Dirección: Pasaje Daniel Coral Vega 566 - Huaraz.",
@@ -69,11 +69,11 @@ const appTranslations = {
         },
         "brand": {
             "title": "Nuestro Propósito",
-            "manifesto": "Un refugio en el corazón de Huaraz diseñado para quienes viven en movimiento. Somos una cafetería de especialidad y una comunidad activa que fusiona la cultura de la montaña con el primer café <span style=\"color: var(--color-secondary);\">biodinámico</span> del Perú, proveniente de La Chacra D'dago. Nuestro enfoque está en brindar energía para tus rutas, trabajando en armonía con el entorno y apoyando a nuestra comunidad a través de <a href=\"https://www.instagram.com/construyendo.sonrisas___\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: var(--color-secondary); font-weight: 600;\">Construyendo Sonrisas</a>. Aquí, cada taza es el punto de encuentro perfecto para planificar la próxima cumbre o recuperar fuerzas post-ruta."
+            "manifesto": "Un refugio en el corazón de Huaraz diseñado para quienes viven en movimiento. Somos una cafetería de especialidad y una comunidad activa que fusiona nuestra esencia local con el primer café <span style=\"color: var(--color-secondary);\">biodinámico</span> del Perú, proveniente de La Chacra D'dago. Más que solo brindarte energía, somos tu pausa para recargar: ofrecemos comida consciente y un espacio que entiende tu ritmo, trabajando en armonía con el entorno e impulsando a nuestra comunidad a través de <a href=\"https://www.instagram.com/construyendo.sonrisas___\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: var(--color-secondary); font-weight: 600;\">Construyendo Sonrisas</a>. Aquí, cada taza es un punto de encuentro; el lugar perfecto para arrancar el día, recuperar el cuerpo a tu manera, y recordar que parar también es parte de seguir."
         },
         "origin": {
             "title": "NUESTRO ORIGEN: CAFÉ <em style=\"color: var(--color-secondary);\">BIODINÁMICO</em>",
-            "desc": "Cultivado en <strong>La Chacra D'Dago</strong>, una finca familiar enfocada en la agricultura <span style=\"color: var(--color-secondary);\">biodinámica</span>. Un modelo regenerativo, guiado por el calendario lunar, que respeta la biodiversidad y beneficia tanto a la comunidad como al planeta.",
+            "desc": "El ritual del café de especialidad bien hecho. Cultivado en <strong>La Chacra D'Dago</strong>, una finca familiar enfocada en la agricultura <span style=\"color: var(--color-secondary);\">biodinámica</span>. Un modelo regenerativo, guiado por el calendario lunar, que respeta la biodiversidad y beneficia tanto a la comunidad como al planeta.",
             "score": "<strong style=\"color: #12A2A9;\">Puntaje SCA:</strong> 84.5",
             "notes": "<strong style=\"color: #12A2A9;\">Notas:</strong> Melaza, durazno, cítrico y miel",
             "height": "<strong style=\"color: #12A2A9;\">Altura:</strong> 1550 - 1750 msnm",
@@ -89,7 +89,7 @@ const appTranslations = {
         },
         "events_cards": {
             "main_title": "Tu Espacio para Eventos",
-            "main_desc": "Alquila nuestro espacio para tus reuniones, talleres o celebraciones. Un ambiente cómodo, con todo lo que necesitas y con la ventaja de disfrutar del mejor café de especialidad durante tu evento."
+            "main_desc": "Haz de Kapulí el punto de encuentro para tus reuniones, talleres o celebraciones. Un ambiente cómodo, con todo lo que necesitas y con la ventaja de disfrutar del mejor café de especialidad durante tu evento."
         }
     },
     "en": {
@@ -119,11 +119,11 @@ const appTranslations = {
         },
         "market": {
             "title": "Take Kapulí With You",
-            "description": "Discover our merchandising and local products."
+            "description": "Part of your daily ecosystem."
         },
         "community": {
             "title": "Join the Kapulí Community",
-            "description": "Be part of our running groups, mountain outings, and social events."
+            "description": "The movement that chooses. The meeting point for the active community in Huaraz."
         },
         "vibes": {
             "title": "Kapulí Vibes"
@@ -149,7 +149,7 @@ const appTranslations = {
         "social_responsibility": {
             "title": "SOCIAL <em>RESPONSIBILITY</em>",
             "desc1": "We believe in the sustainability of the Andean environment. We respect every mountain route, care for the origin of our coffee, and work in harmony with the life of our community.",
-            "desc2": "This commitment transcends our bar. Through <a href=\"https://www.instagram.com/construyendo.sonrisas___\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link-sonrisas\">Construyendo Sonrisas</a>, we bring smiles and hope to vulnerable children in the villages of Huaraz. Because every cup we serve is also a way to give energy back to our destination."
+            "desc2": "This commitment transcends our bar. Driven by Helen and our tribe, we bring hope to vulnerable children in Huaraz through <a href=\"https://www.instagram.com/construyendo.sonrisas___\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link-sonrisas\">Construyendo Sonrisas</a>. Because every cup we serve is also a way to give energy back to our destination."
         },
         "footer": {
             "address": "Address: Pasaje Daniel Coral Vega 566 - Huaraz.",
@@ -162,11 +162,11 @@ const appTranslations = {
         },
         "brand": {
             "title": "Our Purpose",
-            "manifesto": "A refuge in the heart of Huaraz designed for those who live on the move. We are a specialty coffee shop and an active community that merges mountain culture with the first <span style=\"color: var(--color-secondary);\">biodynamic</span> coffee in Peru, from La Chacra D'dago. Our focus is on providing energy for your routes, working in harmony with the environment and supporting our community through <a href=\"https://www.instagram.com/construyendo.sonrisas___\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: var(--color-secondary); font-weight: 600;\">Construyendo Sonrisas</a>. Here, every cup is the perfect meeting point to plan the next summit or recover strength post-route."
+            "manifesto": "A refuge in the heart of Huaraz designed for those who live on the move. We are a specialty coffee shop and an active community that merges our local essence with the first <span style=\"color: var(--color-secondary);\">biodynamic</span> coffee in Peru, from La Chacra D'dago. More than just providing you energy, we are your pause to recharge: we offer conscious food and a space that understands your pace, working in harmony with the environment and driving our community forward through <a href=\"https://www.instagram.com/construyendo.sonrisas___\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: var(--color-secondary); font-weight: 600;\">Construyendo Sonrisas</a>. Here, every cup is a meeting point; the perfect place to start the day, recover your body your way, and remember that stopping is also part of moving forward."
         },
         "origin": {
             "title": "OUR ORIGIN: <em style=\"color: var(--color-secondary);\">BIODYNAMIC</em> COFFEE",
-            "desc": "Grown in <strong>La Chacra D'Dago</strong>, a family farm focused on <span style=\"color: var(--color-secondary);\">biodynamic</span> agriculture. A regenerative model, guided by the lunar calendar, that respects biodiversity and benefits both the community and the planet.",
+            "desc": "The ritual of specialty coffee done right. Grown in <strong>La Chacra D'Dago</strong>, a family farm focused on <span style=\"color: var(--color-secondary);\">biodynamic</span> agriculture. A regenerative model, guided by the lunar calendar, that respects biodiversity and benefits both the community and the planet.",
             "score": "<strong style=\"color: #12A2A9;\">SCA Score:</strong> 84.5",
             "notes": "<strong style=\"color: #12A2A9;\">Notes:</strong> Molasses, peach, citrus, and honey",
             "height": "<strong style=\"color: #12A2A9;\">Altitude:</strong> 1550 - 1750 masl",
@@ -182,7 +182,7 @@ const appTranslations = {
         },
         "events_cards": {
             "main_title": "Your Event Space",
-            "main_desc": "Rent our space for your meetings, workshops, or celebrations. A comfortable environment, with everything you need and the advantage of enjoying the best specialty coffee during your event."
+            "main_desc": "Make Kapulí the meeting point for your meetings, workshops, or celebrations. A comfortable environment, with everything you need and the advantage of enjoying the best specialty coffee during your event."
         }
     }
 };
