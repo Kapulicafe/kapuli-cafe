@@ -60,8 +60,8 @@ const appTranslations = {
             "desc3": "Esta labor nace de una premisa muy simple: todo lo bueno que nos da la vida merece ser compartido. Para nosotros, crecer significa no olvidar a quienes nos rodean y convertir la gratitud en acciones, porque cada taza que servimos es también una forma de retribuir el cariño que recibimos de nuestra comunidad."
         },
         "footer": {
-            "address": "Dirección: Pasaje Daniel Coral Vega 566 - Huaraz.",
-            "hours": "Lunes a viernes de 8 am a 9 pm",
+            "address": "Ubícanos: Pasaje Daniel Coral Vega 566 - Huaraz.",
+            "hours": "Lunes a Domingo de 8 am a 9 pm",
             "follow": "Síguenos",
             "map_btn": "Ver en Google Maps"
         },
@@ -154,8 +154,8 @@ const appTranslations = {
             "desc3": "This work is born from a very simple premise: all the good things life gives us deserve to be shared. For us, growing means not forgetting those around us and turning gratitude into action, because every cup we serve is also a way of giving back the affection we receive from our community."
         },
         "footer": {
-            "address": "Address: Pasaje Daniel Coral Vega 566 - Huaraz.",
-            "hours": "Monday to Friday from 8 am to 9 pm",
+            "address": "Find us: Pasaje Daniel Coral Vega 566 - Huaraz.",
+            "hours": "Monday to Sunday from 8 am to 9 pm",
             "follow": "Follow us",
             "map_btn": "View on Google Maps"
         },
