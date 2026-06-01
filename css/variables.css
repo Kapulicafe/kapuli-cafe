@@ -45,13 +45,14 @@
     --spacing-md: 2rem;
     --spacing-lg: 4rem;
     --spacing-xl: 6rem;
+    --spacing-xxl: 8rem;
 
-    /* Borders & Shadows (Estilo Brutalista) */
-    --border-radius: 0px;
-    --shadow-sm: none;
-    --shadow-md: none;
+    /* Borders & Shadows (Estilo Suavizado) */
+    --border-radius: 12px;
+    --shadow-sm: 0 4px 12px rgba(0,0,0,0.05);
+    --shadow-md: 0 10px 30px rgba(0,0,0,0.08);
     --border-width: 1px;
-    --border-solid: var(--border-width) solid var(--color-noche-andina);
+    --border-solid: var(--border-width) solid rgba(0,0,0,0.05);
 
     /* Cursor Personalizado */
     --cursor-main: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM1NDZFN0EiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KICA8cGF0aCBkPSJNMTkuNyAxM2MwLTMuMy0zLjctNy04LjctN1MyLjMgOS43IDIuMyAxM3MzLjcgNyA4LjcgN3M4LjctMy43IDguNy03eiIvPgogIDxwYXRoIGQ9Ik0xNS43IDEzYy0xLjMtMS4zLTMuNy0yLTUuNy0ycy00LjQuNy01LjcgMiIvPgo8L3N2Zz4=') 16 16, auto;

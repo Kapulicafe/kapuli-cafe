@@ -3,7 +3,7 @@
 .btn {
     display: inline-block;
     padding: 1rem 2.5rem;
-    border-radius: 0;
+    border-radius: var(--border-radius);
     font-weight: 700;
     font-family: var(--font-primary);
     text-transform: uppercase;
@@ -32,7 +32,7 @@
     color: var(--color-text-main);
     padding: 0;
     padding-bottom: 4px;
-    border-radius: 0;
+    border-radius: var(--border-radius);
     position: relative;
     text-decoration: none;
 }
@@ -68,7 +68,7 @@
     background-color: var(--color-surface);
     color: var(--color-noche-andina);
     padding: var(--spacing-lg);
-    border-radius: 0;
+    border-radius: var(--border-radius);
     border: 1px solid var(--color-borde-organico);
     transition: background-color 0.3s ease, color 0.3s ease;
     text-align: center;
@@ -226,7 +226,7 @@
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: none;
-    border-radius: 0;
+    border-radius: var(--border-radius);
     padding: var(--spacing-sm);
     text-align: center;
     transition: transform 0.3s ease;
