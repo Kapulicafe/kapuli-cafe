@@ -8,8 +8,8 @@ const appTranslations = {
             "events": "Eventos"
         },
         "hero": {
-            "slogan": "El refugio donde tu ruta toma un respiro",
-            "description": "Café de especialidad y energía saludable para seguir en movimiento",
+            "slogan": "Pausa para recargar.",
+            "description": "Café de especialidad, comida consciente y una comunidad que entiende que parar también es avanzar.",
             "cta": "Ver Carta"
         },
         "menu": {
@@ -26,7 +26,7 @@ const appTranslations = {
         },
         "market": {
             "title": "Lleva Kapulí Contigo",
-            "description": "Descubre nuestro merchandising y productos locales."
+            "description": "Descubre nuestro merchandising."
         },
         "community": {
             "title": "Únete a la Comunidad Kapulí",
@@ -43,6 +43,7 @@ const appTranslations = {
             "title": "EXPERIENCIA KAPULÍ"
         },
         "zenQuotes": [
+            { "text": "\"El dolor es inevitable, el sufrimiento es opcional.\"", "author": "Haruki Murakami", "obra": "De qué hablo cuando hablo de correr" },
             { "text": "\"La mayoría de los corredores no corren porque quieran vivir más tiempo, sino porque quieren vivir plenamente.\"", "author": "Haruki Murakami", "obra": "De qué hablo cuando hablo de correr" },
             { "text": "\"Exigirse al máximo dentro de los límites individuales de cada uno: esa es la esencia de correr.\"", "author": "Haruki Murakami", "obra": "De qué hablo cuando hablo de correr" },
             { "text": "\"Y una vez que la tormenta termine, no recordarás cómo lo lograste, cómo sobreviviste. [...] Pero una cosa sí es segura. Cuando salgas de esa tormenta, no serás la misma persona que entró en ella.\"", "author": "Haruki Murakami", "obra": "Kafka en la orilla" },
@@ -64,11 +65,11 @@ const appTranslations = {
             "map_btn": "Ver en Google Maps"
         },
         "chat": {
-            "text": "Chatea con nosotros"
+            "text": "Conversemos"
         },
         "brand": {
-            "title": "KAPULÍ CAFÉ",
-            "manifesto": "Un refugio en el corazón de Huaraz diseñado para quienes viven en movimiento. Somos una cafetería de especialidad y una comunidad activa que fusiona la cultura de la montaña y el trail running con el primer café <span style=\"color: var(--color-secondary);\">biodinámico</span> del Perú, proveniente de La Chacra D'dago. Nuestro enfoque está en brindar energía limpia, saludable y consciente para tus rutas, trabajando en armonía con el entorno andino y el destino de nuestra comunidad. Aquí, cada taza es el punto de encuentro perfecto para planificar la próxima cumbre o recuperar fuerzas post-ruta."
+            "title": "Nuestro Propósito",
+            "manifesto": "Un refugio en el corazón de Huaraz diseñado para quienes viven en movimiento. Somos una cafetería de especialidad y una comunidad activa que fusiona la cultura de la montaña con el primer café <span style=\"color: var(--color-secondary);\">biodinámico</span> del Perú, proveniente de La Chacra D'dago. Nuestro enfoque está en brindar energía para tus rutas, trabajando en armonía con el entorno y apoyando a nuestra comunidad a través de <a href=\"https://www.instagram.com/construyendo.sonrisas___\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: var(--color-secondary); font-weight: 600;\">Construyendo Sonrisas</a>. Aquí, cada taza es el punto de encuentro perfecto para planificar la próxima cumbre o recuperar fuerzas post-ruta."
         },
         "origin": {
             "title": "NUESTRO ORIGEN: CAFÉ <em style=\"color: var(--color-secondary);\">BIODINÁMICO</em>",
@@ -87,11 +88,8 @@ const appTranslations = {
             "events_desc": "Proyecciones, charlas técnicas y café post-ruta. Aprende, comparte y disfruta de la cultura de montaña."
         },
         "events_cards": {
-            "capacity_title": "Capacidad Flexible",
-            "capacity_desc": "Ideal para grupos pequeños y medianos. Configuración adaptable a tus necesidades.",
-            "equipment_title": "Equipamiento Completo",
-            "equipment_desc": "Wi-Fi de alta velocidad, proyector y sistema de sonido disponibles.",
-            "cta": "Consultar Disponibilidad"
+            "main_title": "Tu Espacio para Eventos",
+            "main_desc": "Alquila nuestro espacio para tus reuniones, talleres o celebraciones. Un ambiente cómodo, con todo lo que necesitas y con la ventaja de disfrutar del mejor café de especialidad durante tu evento."
         }
     },
     "en": {
@@ -103,8 +101,8 @@ const appTranslations = {
             "events": "Events"
         },
         "hero": {
-            "slogan": "The refuge where your trail takes a breath",
-            "description": "Specialty coffee and healthy energy to keep you moving",
+            "slogan": "Pause to recharge.",
+            "description": "Specialty coffee, conscious food, and a community that understands stopping is also moving forward.",
             "cta": "View Menu"
         },
         "menu": {
@@ -138,6 +136,7 @@ const appTranslations = {
             "title": "KAPULÍ EXPERIENCE"
         },
         "zenQuotes": [
+            { "text": "\"Pain is inevitable. Suffering is optional.\"", "author": "Haruki Murakami", "obra": "What I Talk About When I Talk About Running" },
             { "text": "\"Most runners run not because they want to live longer, but because they want to live life to the fullest.\"", "author": "Haruki Murakami", "obra": "What I Talk About When I Talk About Running" },
             { "text": "\"Exerting yourself to the fullest within your individual limits: that's the essence of running.\"", "author": "Haruki Murakami", "obra": "What I Talk About When I Talk About Running" },
             { "text": "\"And once the storm is over, you won't remember how you made it through, how you managed to survive. [...] But one thing is certain. When you come out of the storm, you won't be the same person who walked in.\"", "author": "Haruki Murakami", "obra": "Kafka on the Shore" },
@@ -162,8 +161,8 @@ const appTranslations = {
             "text": "Chat with us"
         },
         "brand": {
-            "title": "KAPULÍ CAFÉ",
-            "manifesto": "A refuge in the heart of Huaraz designed for those who live on the move. We are a specialty coffee shop and an active community that merges mountain culture and trail running with the first <span style=\"color: var(--color-secondary);\">biodynamic</span> coffee in Peru, from La Chacra D'dago. Our focus is on providing clean, healthy, and conscious energy for your routes, working in harmony with the Andean environment and the destination of our community. Here, every cup is the perfect meeting point to plan the next summit or recover strength post-route."
+            "title": "Our Purpose",
+            "manifesto": "A refuge in the heart of Huaraz designed for those who live on the move. We are a specialty coffee shop and an active community that merges mountain culture with the first <span style=\"color: var(--color-secondary);\">biodynamic</span> coffee in Peru, from La Chacra D'dago. Our focus is on providing energy for your routes, working in harmony with the environment and supporting our community through <a href=\"https://www.instagram.com/construyendo.sonrisas___\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: var(--color-secondary); font-weight: 600;\">Construyendo Sonrisas</a>. Here, every cup is the perfect meeting point to plan the next summit or recover strength post-route."
         },
         "origin": {
             "title": "OUR ORIGIN: <em style=\"color: var(--color-secondary);\">BIODYNAMIC</em> COFFEE",
@@ -182,11 +181,8 @@ const appTranslations = {
             "events_desc": "Screenings, technical talks, and post-route coffee. Learn, share, and enjoy mountain culture."
         },
         "events_cards": {
-            "capacity_title": "Flexible Capacity",
-            "capacity_desc": "Ideal for small and medium groups. Adaptable configuration to your needs.",
-            "equipment_title": "Full Equipment",
-            "equipment_desc": "High-speed Wi-Fi, projector, and sound system available.",
-            "cta": "Check Availability"
+            "main_title": "Your Event Space",
+            "main_desc": "Rent our space for your meetings, workshops, or celebrations. A comfortable environment, with everything you need and the advantage of enjoying the best specialty coffee during your event."
         }
     }
 };

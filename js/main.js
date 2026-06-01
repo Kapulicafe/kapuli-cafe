@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const zenContainer = document.getElementById('zen-quote-container');
         if (!zenContainer) return;
 
-        let currentIndex = Math.floor(Math.random() * 8); // Assuming 8 quotes
+        let currentIndex = Math.floor(Math.random() * 9); // Supports the current 9 quotes
 
         const renderQuote = () => {
             const currentZenQuotes = translations && translations.zenQuotes ? translations.zenQuotes : appTranslations['es'].zenQuotes;

@@ -1,30 +1,38 @@
 /* Variables de CSS (Modo Oscuro Orgánico — Papel de Arroz) */
 :root {
-/* === Paleta Orgánica Principal === */
-    --color-papel-arroz: #E0D8C8;           /* Tono principal cálido y orgánico (Fondo) */
-    --color-papel-arroz-claro: #EBE5D9;     /* Superficies más claras */
-    --color-naranja-alpinista: #E66A35;      /* Acento secundario vibrante */
-    --color-cereza-sangre: #A93226;          /* Acción principal (CTA) */
-    --color-fondo-oscuro: #1A1816;           /* Tinta oscura para texto */
-    --color-texto-secundario: #5C554D;       /* Textos de párrafo menos prioritarios */
+/* === Paleta Orgánica Principal (60/30/10) === */
+    /* 60% - La Base Atmosférica */
+    --color-papel-arroz: #E0D8C8;           /* Lienzo principal, fondo blog/historia */
+    --color-papel-arroz-claro: #EBE5D9;     /* Fondo carta/menú */
 
-    /* Colores derivados de la marca */
-    --color-primary: #A66E4A;                /* Marrón Kapulí oscurecido para contraste */
+    /* 30% - Identidad y Estructura */
+    --color-verde-kapuli: #3D8271;          /* Soporte, íconos */
+    --color-marron-kapuli: #A66E4A;         /* Soporte */
+    --color-noche-andina: #1E2326;          /* Contrastes fuertes, Hero bg */
+    --color-pizarra-oscura: #2C3A40;        /* Footer bg, Impact bg */
+    --color-pizarra-cumbres: #CBBCA3;       /* Borde header */
+
+    /* 10% - Acentos de Tensión */
+    --color-naranja-alpinista: #E66A35;     /* Primary CTA bg, Running stats */
+    --color-cereza-sangre: #A93226;         /* Secondary CTA text, Running icons, Badges */
+
+    /* Elementos UI / Tipografía */
+    --color-fondo-oscuro: #1A1816;          /* Texto principal/títulos sobre claro, CTA text */
+    --color-texto-secundario: #5C554D;      /* Texto secundario/subtítulos */
+    --color-borde-organico: #C8BFA9;        /* Líneas divisorias, bordes UI, menús */
+    --color-liquen-profundo: #D3C9B5;       /* Bordes de tarjetas menú (alternativo) */
+
+    /* Asignaciones semánticas */
+    --color-primary: var(--color-marron-kapuli);
     --color-primary-hover: #8C5838;
-    --color-secondary: #3D8271;              /* Verde Kapulí oscuro para contraste */
+    --color-secondary: var(--color-verde-kapuli);
     --color-secondary-hover: #2F6456;
+    
     --color-background: var(--color-papel-arroz);
     --color-surface: var(--color-papel-arroz-claro);
     --color-text-main: var(--color-fondo-oscuro);
     --color-text-muted: var(--color-texto-secundario);
-    --color-border: #C8BFA9;                 /* Borde sutil orgánico */
-
-    /* Tonos de contraste */
-    --color-liquen-profundo: #D3C9B5;        /* Reasignado a un tono claro para tarjetas */
-    --color-terracota-ceniza: #8D6A58;
-    --color-pizarra-cumbres: #CBBCA3;        /* Fondo alternativo claro */
-    --color-pizarra-oscura: #2C3A40;         /* Fondo oscuro intermedio */
-    --color-noche-andina: #1E2326;           /* Fondo más oscuro profundo */
+    --color-border: var(--color-borde-organico);
     
     /* Tipografía de la Marca */
     --font-primary: 'Intro', 'Montserrat', sans-serif;

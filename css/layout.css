@@ -89,17 +89,17 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #1E2326;
-    color: #E0D8C8;
+    background-color: var(--color-papel-arroz);
+    color: var(--color-fondo-oscuro);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     z-index: 1000;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid var(--color-pizarra-cumbres);
     transition: all 0.3s ease, opacity 1s ease, visibility 1s ease;
 }
 
 .header.scrolled {
-    background-color: rgba(30, 35, 38, 0.98); /* #1E2326 más sólido */
+    background-color: rgba(224, 216, 200, 0.98); /* #E0D8C8 con opacidad */
     box-shadow: var(--shadow-sm);
 }
 
@@ -107,7 +107,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--spacing-sm) var(--spacing-md);
+    padding: 0.5rem var(--spacing-md);
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -121,7 +121,7 @@ section {
 
 .logo h1 {
     font-size: 1.8rem;
-    color: var(--color-text-main);
+    color: var(--color-fondo-oscuro);
     margin: 0;
     font-weight: 700;
     letter-spacing: 1px;
@@ -129,10 +129,10 @@ section {
 
 .navbar-brand-name {
     font-family: var(--font-serif);
-    font-size: 1.1rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 700;
     letter-spacing: 3px;
-    color: var(--color-papel-arroz);
+    color: var(--color-fondo-oscuro);
     text-transform: uppercase;
     line-height: 1;
     user-select: none;
@@ -146,7 +146,7 @@ section {
 .nav-links a {
     font-size: 0.95rem;
     font-weight: 600;
-    color: #E0D8C8;
+    color: var(--color-fondo-oscuro);
     text-transform: uppercase;
     letter-spacing: 1px;
     position: relative;
@@ -182,7 +182,7 @@ section {
     cursor: pointer;
     padding: 4px 8px;
     font-weight: 700;
-    color: #E0D8C8; /* color actualizado */
+    color: var(--color-fondo-oscuro);
     font-family: var(--font-primary);
     transition: color 0.3s ease;
 }
@@ -201,9 +201,9 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    background-color: var(--color-background);
+    background-color: var(--color-noche-andina);
     padding-top: 85px; /* Compensa el header fijo */
-    color: var(--color-text-main);
+    color: var(--color-papel-arroz-claro);
 }
 
 .hero-left {
@@ -230,7 +230,7 @@ section {
 .hero h2 {
     font-family: var(--font-serif);
     font-size: 5.5rem; /* Gigante */
-    color: var(--color-secondary);
+    color: var(--color-papel-arroz-claro);
     margin-bottom: var(--spacing-sm);
     font-weight: 500;
     letter-spacing: -2px; /* Espaciado muy ajustado tipo Onyx */
@@ -258,7 +258,7 @@ section {
 
 /* Secciones Específicas */
 .menu-section {
-    background-color: var(--color-background);
+    background-color: var(--color-surface);
 }
 
 .menu-categories {

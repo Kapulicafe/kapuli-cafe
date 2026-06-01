@@ -7,8 +7,8 @@
         "events": "Eventos"
     },
     "hero": {
-        "slogan": "El refugio donde tu ruta toma un respiro",
-        "description": "Café de especialidad y energía saludable para seguir en movimiento",
+        "slogan": "Pausa para recargar.",
+        "description": "Café de especialidad, comida consciente y una comunidad que entiende que parar también es avanzar.",
         "cta": "Ver Carta"
     },
     "menu": {
@@ -34,7 +34,7 @@
     },
     "market": {
         "title": "Lleva Kapulí Contigo",
-        "description": "Descubre nuestro merchandising y productos locales."
+        "description": "Descubre nuestro merchandising."
     },
     "community": {
         "title": "Únete a la Comunidad Kapulí",

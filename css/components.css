@@ -15,13 +15,13 @@
 }
 
 .btn-primary {
-    background-color: var(--color-noche-andina); 
-    color: var(--color-papel-arroz); 
+    background-color: var(--color-naranja-alpinista); 
+    color: var(--color-fondo-oscuro); 
 }
 
 .btn-primary:hover {
-    background-color: var(--color-papel-arroz); 
-    color: var(--color-noche-andina);
+    background-color: var(--color-noche-andina); 
+    color: var(--color-papel-arroz-claro);
     transform: none;
 }
 
@@ -44,7 +44,7 @@
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: var(--color-naranja-alpinista);
+    background-color: var(--color-cereza-sangre);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
@@ -54,7 +54,7 @@
     background-color: transparent;
     transform: none;
     box-shadow: none;
-    color: var(--color-text-main);
+    color: var(--color-cereza-sangre);
 }
 
 .btn-secondary:hover::after, .btn-strava:hover::after,
@@ -65,11 +65,11 @@
 
 /* Tarjetas de Menú */
 .category-card {
-    background-color: var(--color-papel-arroz);
+    background-color: var(--color-surface);
     color: var(--color-noche-andina);
     padding: var(--spacing-lg);
     border-radius: 0;
-    border: var(--border-solid);
+    border: 1px solid var(--color-borde-organico);
     transition: background-color 0.3s ease, color 0.3s ease;
     text-align: center;
     position: relative;
@@ -94,7 +94,7 @@
 }
 
 .category-card h3 {
-    color: var(--color-text-main);
+    color: var(--color-fondo-oscuro);
     font-size: 2rem;
     margin-bottom: var(--spacing-sm);
     font-family: var(--font-serif);
@@ -674,4 +674,33 @@
     .brand-presentation__title {
         letter-spacing: 0.1em;
     }
+}
+
+/* ===================================================
+   Utilidades de Acento (10% - Tensión / Montaña)
+   =================================================== */
+.stat-highlight {
+    color: var(--color-naranja-alpinista);
+    font-weight: 700;
+}
+
+.icon-critical, 
+.icon-critical svg {
+    color: var(--color-cereza-sangre);
+}
+
+.badge-alert {
+    position: relative;
+}
+
+.badge-alert::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-cereza-sangre);
+    border-radius: 50%;
+    border: 1px solid var(--color-papel-arroz); /* Para separar visualmente del icono/fondo */
 }
