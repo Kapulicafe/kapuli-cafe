@@ -76,7 +76,7 @@ const appTranslations = {
             "manifesto": "Un refugio en el corazón de Huaraz diseñado para quienes viven en movimiento. Somos una cafetería de especialidad y una comunidad activa que fusiona nuestra esencia local con el primer café <span style=\"color: var(--color-secondary);\">biodinámico</span> del Perú, proveniente de La Chacra D'dago. Más que solo brindarte energía, somos tu pausa para recargar: un espacio que entiende tu ritmo, trabajando en armonía con el entorno e impulsando a nuestra comunidad a través de <a href=\"https://www.instagram.com/construyendo.sonrisas___\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: var(--color-secondary); font-weight: 600;\">Construyendo Sonrisas</a>. Aquí, cada taza es un punto de encuentro; el lugar perfecto para arrancar el día, recuperar el cuerpo a tu manera, y recordar que parar también es parte de seguir."
         },
         "origin": {
-            "title": "NUESTRO ORIGEN: CAFÉ <em style=\"color: var(--color-secondary);\">BIODINÁMICO</em>",
+            "title": "Nuestro Origen: Café <em style=\"color: var(--color-secondary);\">Biodinámico</em>",
             "desc": "El ritual del café de especialidad. Cultivado en <strong>La Chacra D'Dago</strong>, una finca familiar enfocada en la agricultura <span style=\"color: var(--color-secondary);\">biodinámica</span>. Un modelo regenerativo, guiado por el calendario lunar, que respeta la biodiversidad y beneficia tanto a la comunidad como al planeta.",
             "score": "<strong style=\"color: #12A2A9;\">Puntaje SCA:</strong> 84.5",
             "notes": "<strong style=\"color: #12A2A9;\">Notas:</strong> Melaza, durazno, cítrico y miel",
@@ -173,7 +173,7 @@ const appTranslations = {
             "manifesto": "A refuge in the heart of Huaraz designed for those who live on the move. We are a specialty coffee shop and an active community that merges our local essence with the first <span style=\"color: var(--color-secondary);\">biodynamic</span> coffee in Peru, from La Chacra D'dago. More than just providing you energy, we are your pause to recharge: a space that understands your pace, working in harmony with the environment and driving our community forward through <a href=\"https://www.instagram.com/construyendo.sonrisas___\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: var(--color-secondary); font-weight: 600;\">Construyendo Sonrisas</a>. Here, every cup is a meeting point; the perfect place to start the day, recover your body your way, and remember that stopping is also part of moving forward."
         },
         "origin": {
-            "title": "OUR ORIGIN: <em style=\"color: var(--color-secondary);\">BIODYNAMIC</em> COFFEE",
+            "title": "Our Origin: <em style=\"color: var(--color-secondary);\">Biodynamic</em> Coffee",
             "desc": "The ritual of specialty coffee. Grown in <strong>La Chacra D'Dago</strong>, a family farm focused on <span style=\"color: var(--color-secondary);\">biodynamic</span> agriculture. A regenerative model, guided by the lunar calendar, that respects biodiversity and benefits both the community and the planet.",
             "score": "<strong style=\"color: #12A2A9;\">SCA Score:</strong> 84.5",
             "notes": "<strong style=\"color: #12A2A9;\">Notes:</strong> Molasses, peach, citrus, and honey",
