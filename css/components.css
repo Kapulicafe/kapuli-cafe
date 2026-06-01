@@ -66,7 +66,7 @@
 /* Tarjetas de Menú */
 .category-card {
     background-color: var(--color-surface);
-    color: var(--color-noche-andina);
+    color: var(--color-papel-arroz-claro);
     padding: var(--spacing-lg);
     border-radius: var(--border-radius);
     border: 1px solid var(--color-borde-organico);
@@ -94,7 +94,7 @@
 }
 
 .category-card h3 {
-    color: var(--color-fondo-oscuro);
+    color: var(--color-papel-arroz-claro);
     font-size: 2rem;
     margin-bottom: var(--spacing-sm);
     font-family: var(--font-serif);

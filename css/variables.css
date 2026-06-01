@@ -15,6 +15,7 @@
     /* 10% - Acentos de Tensión */
     --color-naranja-alpinista: #E66A35;     /* Primary CTA bg, Running stats */
     --color-cereza-sangre: #A93226;         /* Secondary CTA text, Running icons, Badges */
+    --color-terracota-ceniza: #C8BFA9;      /* Texto suave, bordes orgánicos sutiles */
 
     /* Elementos UI / Tipografía */
     --color-fondo-oscuro: #1A1816;          /* Texto principal/títulos sobre claro, CTA text */
