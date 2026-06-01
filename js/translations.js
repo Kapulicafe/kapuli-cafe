@@ -88,7 +88,7 @@ const appTranslations = {
             "running_desc": "Salidas grupales todos los domingos. ¡Todos los ritmos bienvenidos! Corre con nosotros por los senderos de Huaraz.",
             "running_cta": "Únete a nuestra próxima salida",
             "strava": "SÍGUENOS EN STRAVA",
-            "events_title": "Eventos y Charlas",
+            "events_title": "Talleres",
             "events_desc": "Proyecciones, charlas técnicas y café post-ruta. Aprende, comparte y disfruta de la cultura de montaña."
         },
         "events_cards": {
@@ -185,7 +185,7 @@ const appTranslations = {
             "running_desc": "Group outings every Sunday. All paces welcome! Run with us through the trails of Huaraz.",
             "running_cta": "Join our next outing",
             "strava": "FOLLOW US ON STRAVA",
-            "events_title": "Events and Talks",
+            "events_title": "Workshops",
             "events_desc": "Screenings, technical talks, and post-route coffee. Learn, share, and enjoy mountain culture."
         },
         "events_cards": {
