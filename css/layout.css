@@ -278,7 +278,8 @@ section {
 
 /* Secciones Específicas */
 .menu-section {
-    background-color: var(--color-surface);
+    background-color: var(--color-pizarra-oscura);
+    color: var(--color-papel-arroz-claro);
 }
 
 .menu-categories {

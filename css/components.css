@@ -631,12 +631,7 @@
    =================================================== */
 .brand-presentation {
     text-align: center;
-    /* Fondo oscuro propio: la menu-section es beige, este bloque crea su isla oscura */
-    background-color: var(--color-noche-andina);
     padding: 5rem 2rem 4.5rem;
-    /* Full-bleed horizontal dentro del container */
-    margin-left: calc(-1 * var(--spacing-sm));
-    margin-right: calc(-1 * var(--spacing-sm));
     margin-bottom: 3rem;
 }
 
