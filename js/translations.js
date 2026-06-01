@@ -92,8 +92,8 @@ const appTranslations = {
             "events_desc": "Proyecciones, charlas técnicas y café post-ruta. Aprende, comparte y disfruta de la cultura de montaña."
         },
         "events_cards": {
-            "main_title": "Tu Espacio para Eventos",
-            "main_desc": "Haz de Kapulí el punto de encuentro para tus reuniones, talleres o celebraciones. Un ambiente cómodo, con todo lo que necesitas y con la ventaja de disfrutar del mejor café de especialidad durante tu evento."
+            "main_title": "Tu espacio para eventos",
+            "main_desc": "Haz de Kapulí el punto de encuentro para tus reuniones, talleres o celebraciones. Un ambiente cómodo, con todo lo que necesitas y compartiendo de un delicioso café durante tu evento."
         }
     },
     "en": {
@@ -190,7 +190,7 @@ const appTranslations = {
         },
         "events_cards": {
             "main_title": "Your Event Space",
-            "main_desc": "Make Kapulí the meeting point for your meetings, workshops, or celebrations. A comfortable environment, with everything you need and the advantage of enjoying the best specialty coffee during your event."
+            "main_desc": "Make Kapulí the meeting point for your meetings, workshops, or celebrations. A comfortable environment, with everything you need and sharing a delicious coffee during your event."
         }
     }
 };
