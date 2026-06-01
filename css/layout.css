@@ -282,6 +282,17 @@ section {
     color: var(--color-papel-arroz-claro);
 }
 
+.menu-section .section-title {
+    color: var(--color-papel-arroz-claro);
+}
+
+.menu-section .category-card {
+    background-color: transparent;
+    border: none;
+    color: var(--color-papel-arroz-claro);
+    padding: 0;
+}
+
 .menu-categories {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
