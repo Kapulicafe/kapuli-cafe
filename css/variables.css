@@ -22,17 +22,17 @@
     --color-borde-organico: #C8BFA9;        /* Líneas divisorias, bordes UI, menús */
     --color-liquen-profundo: #D3C9B5;       /* Bordes de tarjetas menú (alternativo) */
 
-    /* Asignaciones semánticas */
+    /* Asignaciones semánticas (Modo Oscuro Unificado) */
     --color-primary: var(--color-marron-kapuli);
     --color-primary-hover: #8C5838;
     --color-secondary: var(--color-verde-kapuli);
     --color-secondary-hover: #2F6456;
     
-    --color-background: var(--color-papel-arroz);
-    --color-surface: var(--color-papel-arroz-claro);
-    --color-text-main: var(--color-fondo-oscuro);
-    --color-text-muted: var(--color-texto-secundario);
-    --color-border: var(--color-borde-organico);
+    --color-background: var(--color-noche-andina);
+    --color-surface: var(--color-pizarra-oscura);
+    --color-text-main: var(--color-papel-arroz-claro);
+    --color-text-muted: var(--color-pizarra-cumbres);
+    --color-border: var(--color-texto-secundario);
     
     /* Tipografía de la Marca */
     --font-primary: 'Intro', 'Montserrat', sans-serif;
