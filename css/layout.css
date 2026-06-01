@@ -83,6 +83,23 @@ section {
     margin-right: auto;
 }
 
+.subsection-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-main);
+    font-weight: 700;
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    line-height: 1.2;
+}
+
+.subsection-title em {
+    font-style: italic;
+    color: var(--color-primary);
+}
+
 /* Header */
 .header {
     position: fixed;
