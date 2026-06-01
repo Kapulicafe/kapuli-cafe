@@ -92,11 +92,28 @@ document.addEventListener('DOMContentLoaded', () => {
         renderQuote();
 
         // Rotación automática cada 7 segundos
-        setInterval(() => {
+        let intervalId = setInterval(() => {
             const currentZenQuotes = translations && translations.zenQuotes ? translations.zenQuotes : appTranslations['es'].zenQuotes;
             currentIndex = (currentIndex + 1) % currentZenQuotes.length;
             renderQuote();
         }, 7000);
+
+        // Rotación manual al hacer clic
+        zenContainer.style.cursor = 'pointer';
+        zenContainer.title = 'Haz clic para ver la siguiente frase';
+        zenContainer.addEventListener('click', () => {
+            clearInterval(intervalId);
+            const currentZenQuotes = translations && translations.zenQuotes ? translations.zenQuotes : appTranslations['es'].zenQuotes;
+            currentIndex = (currentIndex + 1) % currentZenQuotes.length;
+            renderQuote();
+            
+            // Reiniciar el intervalo automático
+            intervalId = setInterval(() => {
+                const currentZenQuotes = translations && translations.zenQuotes ? translations.zenQuotes : appTranslations['es'].zenQuotes;
+                currentIndex = (currentIndex + 1) % currentZenQuotes.length;
+                renderQuote();
+            }, 7000);
+        });
     };
 
     
