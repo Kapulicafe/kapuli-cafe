@@ -8,7 +8,7 @@ const appTranslations = {
             "community": "Comunidad",
             "events": "Eventos",
             "experience": "Experiencia",
-            "social": "Social"
+            "social": "Responsabilidad Social"
         },
         "hero": {
             "slogan": "Pausa para recargar.",
@@ -105,7 +105,7 @@ const appTranslations = {
             "community": "Community",
             "events": "Events",
             "experience": "Experience",
-            "social": "Social"
+            "social": "Social Responsibility"
         },
         "hero": {
             "slogan": "Pause to recharge.",
