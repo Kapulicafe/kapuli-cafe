@@ -55,8 +55,8 @@ const appTranslations = {
         ],
         "social_responsibility": {
             "title": "RESPONSABILIDAD <em>SOCIAL</em>",
-            "desc1": "Creemos en la sostenibilidad del entorno andino. Respetamos cada ruta de montaña, cuidamos el origen de nuestro café y trabajamos en armonía con la vida de nuestra comunidad.",
-            "desc2": "Este compromiso trasciende nuestra barra. Impulsados por Helen y nuestra tribu, llevamos esperanza a los niños vulnerables de Huaraz a través de <a href=\"https://www.instagram.com/construyendo.sonrisas___\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link-sonrisas\">Construyendo Sonrisas</a>. Porque cada taza que servimos es también una forma de devolver energía a nuestro destino."
+            "desc1": "En Kapulí creemos que un buen café puede generar un impacto real. Cuidamos el origen de cada grano, respetamos nuestro entorno y trabajamos en armonía con la comunidad que nos rodea.",
+            "desc2": "Desde Kapulí Café impulsamos <a href=\"https://www.instagram.com/construyendo.sonrisas___\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link-sonrisas\">Construyendo Sonrisas</a>, un proyecto social que lleva esperanza y oportunidades a los niños más vulnerables de Huaraz. Porque cada taza que servimos es también una forma de devolver energía a nuestra comunidad."
         },
         "footer": {
             "address": "Dirección: Pasaje Daniel Coral Vega 566 - Huaraz.",
@@ -148,8 +148,8 @@ const appTranslations = {
         ],
         "social_responsibility": {
             "title": "SOCIAL <em>RESPONSIBILITY</em>",
-            "desc1": "We believe in the sustainability of the Andean environment. We respect every mountain route, care for the origin of our coffee, and work in harmony with the life of our community.",
-            "desc2": "This commitment transcends our bar. Driven by Helen and our tribe, we bring hope to vulnerable children in Huaraz through <a href=\"https://www.instagram.com/construyendo.sonrisas___\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link-sonrisas\">Construyendo Sonrisas</a>. Because every cup we serve is also a way to give energy back to our destination."
+            "desc1": "At Kapulí we believe that great coffee can create real impact. We care for the origin of every bean, respect our environment, and work in harmony with the community around us.",
+            "desc2": "From Kapulí Café we drive <a href=\"https://www.instagram.com/construyendo.sonrisas___\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link-sonrisas\">Construyendo Sonrisas</a>, a social project that brings hope and opportunities to the most vulnerable children in Huaraz. Because every cup we serve is also a way to give energy back to our community."
         },
         "footer": {
             "address": "Address: Pasaje Daniel Coral Vega 566 - Huaraz.",
